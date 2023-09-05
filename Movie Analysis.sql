@@ -4,25 +4,7 @@
 
 
 
-Manage a chain of Movie Rental Stores
-Introduction
-In this project, you will write more advanced queries on a database designed to resemble a real-world database system - MySQL’s Sakila Sample Database.
-    The development of the Sakila sample database began in early 2005. Early designs were based on the database used in the Dell whitepaper (Three Approaches to MySQL Applications on Dell PowerEdge Servers).
-    The Sakila sample database is designed to represent a DVD rental store. The Sakila sample database still borrows film and actor names from the Dell sample database.
 
-Problem Description
-You will be writing queries in SQL to manage a chain of movie rental stores, for example,
-    -Track the inventory level and determine whether the rental can happen
-    -Manage customer information and identify loyalty customers
-    -Monitor customers’ owing balance and find overdue DVDs
-
-This project can be considered as a typical retail-related business case, because it has the main metrics you can find in any retailer’s real database, such as Walmart, Shoppers, Loblaws, Amazon...
-
-Key Metrics:
-    -Production information (in this project, it is the film)
-    -Sales information
-    -Inventory information
-    -Customer behavior information
  */
 ########################################################################################################################
 #                                    Exercise 1
@@ -171,7 +153,7 @@ group by 1;
 
 
 ########################################################################################################################
-#                        Exercise 2 (for after Day 4 Lecture):
+#                        Exercise 2 :
 
 # 1.Before doing any exercise, you should explore the data first.
     # -For Exercise 1, we will focus on the product, which is the film (DVD) in this project.
@@ -267,10 +249,7 @@ and rating in ('G','PG-13','PG');
 ########################################################################################################################
 #                                    Exercise 3:
 
-# Let’s look at sales first:
-# The rental table contains one row for each rental of each inventory item with information about who rented what item when it was rented, and when it was returned
-# The rental table refers to the inventory, customer, and staff tables and is referred to by the payment table
-# `Rental_id`: A surrogate primary key that uniquely identifies the rental
+
 
 # 1.How many rentals (basically, the sales volume) happened from 2005-05 to 2005-08? Hint: use date between '2005-05-01' and '2005-08-31';
 
